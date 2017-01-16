@@ -2,6 +2,10 @@ source 'https://rubygems.org'
 
 gem 'carrierwave', '0.11.2'
 
+gem "figaro"
+
+gem "fog"
+
 gem 'rails_12factor', group: :production
 
 gem 'bootstrap-sass', '~> 3.3.5.1'
