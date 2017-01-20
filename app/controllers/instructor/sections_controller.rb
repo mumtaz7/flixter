@@ -16,14 +16,14 @@ class Instructor::SectionsController < ApplicationController
 
   private
 
+  def current_section
+    @current_section ||= Section.find(params[:id])
+  end
+
   def require_authorized_for_current_section
     if current_section.course.user !=current_user
       render text: "Unauthorized", status: :unauthorized
     end
-  end
-
-  def current_section
-    @current_section ||= Section.find(params[:id])
   end
 
   def require_authorized_for_current_course
@@ -34,8 +34,8 @@ class Instructor::SectionsController < ApplicationController
 
   helper_method :current_course
   def current_course
-  if params[:course_id]
-    @current_course ||= Course.find(params[:course_id])
+    if params[:course_id]
+      @current_course ||= Course.find(params[:course_id])
   else
     current_section.course
   end
