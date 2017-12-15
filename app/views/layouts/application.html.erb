@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Flixter</title>
+  <title>Zoom</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -22,14 +22,14 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <%= link_to 'Flixter', root_url, class: 'navbar-brand' %>
+          <%= link_to 'Zoom', root_url, class: 'navbar-brand' %>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li>
-              <%= link_to 'See All Courses', courses_path %>
+              <%= link_to 'Class Schedule', courses_path %>
             </li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
@@ -62,13 +62,6 @@
   <div id="footer">
     <div class="container">
       <div class="col-xs-12 col-sm-3">
-        <b>Teachers</b>
-        <br />
-        <%= link_to 'Teach a Course', new_instructor_course_path %>
-        <br />
-        <%= link_to 'My Dashboard', dashboard_path %>
-      </div>
-      <div class="col-xs-12 col-sm-3">
         <b>About</b>
         <br />
         <%= link_to 'Team', team_path %>
@@ -80,20 +73,17 @@
       <div class="col-xs-12 col-sm-3">
         <b>Contact</b>
         <br />
-        ken@thefirehoseproject.com
+        zoomfitness2017@gmail.com
         <br />
-        One Kendall Square
+        One Zoom Avenue
         <br />
-        Cambridge MA, 02113
+        Parsippany, NJ 07005
       </div>
       <div class="col-xs-12 col-sm-3 social">
         <b>Social</b>
         <br />
         <br />
-        <%= link_to 'http://github.com/mumtaz7' do %>
-          <%= image_tag 'github.png', class: 'social-button' %>
-        <% end %>
-        <%= link_to 'http://instagram.com/mumtazkhan7' do %>
+        <%= link_to 'http://instagram.com' do %>
           <%= image_tag 'instagram.png', class: 'social-button' %>
         <% end %>
         <%= link_to 'http://facebook.com' do %>
