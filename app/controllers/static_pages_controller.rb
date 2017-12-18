@@ -10,4 +10,8 @@ class StaticPagesController < ApplicationController
 
   def team
   end
+
+  def zoom
+  end 
+  
 end
